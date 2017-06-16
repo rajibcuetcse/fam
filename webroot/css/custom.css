@@ -1,0 +1,155 @@
+.CredentialsBlk1 .message.error {
+    background: #fe0000 none repeat scroll 0 0;
+    color: #ffffff;
+    line-height: 28px;
+	font-family:"ProximaNovaSbold";
+	font-size:15px;
+	text-align:center;
+    margin-bottom: 25px !important;
+}
+
+.CredentialsBlk1 .message.success {
+    background: #337ab7 none repeat scroll 0 0;
+    color: #ffffff;
+	font-family:"ProximaNovaSbold";
+	font-size:15px;
+    line-height: 28px;
+	text-align:center;
+    margin-bottom: 25px !important;
+}
+.content_list_wrapper
+{
+    position:relative;
+}
+.overlay
+{
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    background:url('../images/loading.gif') no-repeat #000;
+    opacity: 0.7;
+    z-index: 9999;
+    background-position: center;
+    display:none;
+}
+.overlay.active
+{
+    display:block;
+}
+
+.preview_img img
+{
+    max-width:150px !important;
+    max-height: 150px !important;
+    
+}
+.preview_img_small img
+{
+    max-width:80px !important; max-height:80px !important; float: right;
+}
+.prev_img_small img
+{
+    max-width:89px !important;
+    max-height: 83px !important;
+    
+}
+
+.enter_tags
+{
+    width:100%;
+}
+
+.editor div
+    {
+        width:100% !important;
+    }
+    .editor .nicEdit-main  
+    {
+        background-color: #e1e1e1;
+        background-image: none;
+        border: 1px solid #b1b1b1;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+        color: #999999;
+        font-size: 14px;
+        height: 100px;
+        line-height: 28px;
+        margin-bottom: 10px;
+        padding: 6px 12px;
+        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    }
+    .not-active {
+        pointer-events: none;
+        cursor: default;
+        background:#999 !important;
+    }
+    .select_groups_artists
+    {
+        display:none;
+        margin-top:25px;
+        border-top: 1px solid #979797;
+        padding-top:25px;
+    }
+    .select_groups_artists.active
+    {
+        display:block;
+    }
+    .thumbnail.active
+    {
+        border:solid 1px #FF3030;
+    }
+    .delete_media
+    {
+        cursor:pointer;
+        margin-top:-3px;
+    }
+    #TabInfo1Part2 ul.list-unstyled li.img
+    {
+        background: transparent url("<?php echo $this->Url->build('/images/Page%201/image_icon.png'); ?>") no-repeat scroll left 3px;
+    }
+    #TabInfo1Part2 ul.list-unstyled li.vid
+    {
+        background: transparent url("<?php echo $this->Url->build('/images/Page%201/video_icon.png'); ?>") no-repeat scroll left 3px;
+    }
+    #TabInfo1Part2 ul.list-unstyled li.aud
+    {
+        background: transparent url("<?php echo $this->Url->build('/images/Page%201/media_icon.png'); ?>") no-repeat scroll left 3px;
+    }
+    .error
+    {
+        color:#ff0000;
+    }
+    .local_media, .cloud_media
+    { display:none; }
+    .local_media.active, .cloud_media.active
+    { display:block; }
+    input.error, .jcf-select.error
+    {
+        border: solid 1px #ff0000 !important;
+    }
+
+ #TabInfo1Part2 ul.list-unstyled li.img
+    {
+        background: transparent url("<?php echo $this->Url->build('/images/Page%201/image_icon.png'); ?>") no-repeat scroll left 3px;
+    }
+  
+    .not-active {
+        pointer-events: none;
+        cursor: default;
+        background:#999 !important;
+    }
+    .loading_icon_for_grp{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;   
+}
+
+/*Added by Dipankar*/
+.container{
+	width: 1090px;
+}

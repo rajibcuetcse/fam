@@ -1,0 +1,287 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ko_KP\n"
+"X-Generator: Poedit 1.8.5\n"
+
+msgid "NICKNAME_NOT_SENT_CODE"
+msgstr "Nickname is required"
+
+msgid "EMAIL_ALREADY_EXIST_IN_SYSTEM"
+msgstr "Email already exist in system"
+
+msgid "USER_COULD_NOT_REGISTERED_CODE"
+msgstr "User could not be registered"
+
+msgid "USER_NOT_FOUND_CODE"
+msgstr "등록되지 않은 닉네임입니다.  "
+
+msgid "LOG_INSERTION_FAILED_CODE"
+msgstr "Log insertion failed"
+
+msgid "USER_ID_IS_REQUIRED_CODE"
+msgstr "User id required"
+
+msgid "VALID_EMAIL_IS_REQUIRED_CODE"
+msgstr "올바른 이메일 형식을 입력해주세요. "
+
+msgid "SOCIAL_ID_REQUIRED_CODE"
+msgstr "Social is required"
+
+msgid "PASSWORD_IS_REQUIRED_CODE"
+msgstr "Password is required"
+
+msgid "IS_REC_MARKETING_EMAIL_CODE"
+msgstr "The field is_rec_marketing_email must be either '1' OR '0'"
+
+msgid "USER_TYPE_REQUIRED_CODE"
+msgstr "User_type value is not correct"
+
+msgid "API_TOKEN_NOT_SET_CODE"
+msgstr "api_token has not been sent"
+
+msgid "PLATFORM_FIELD_REQUIRED_CODE"
+msgstr "Platform field is required"
+
+msgid "UDID_FIELD_REQUIRED_CODE"
+msgstr "udid field is required"
+
+msgid "INPUT_DATA_NOT_FOUND_CODE"
+msgstr "Input data not found"
+
+msgid "INPUT_DATA_KEY_NAME_NOT_CORRECT_CODE"
+msgstr "Required input data key name is not correct or not sent"
+
+msgid "INPUT_DATA_VALUE_FOUND_EMPTY_CODE"
+msgstr "Required input value found empty"
+
+msgid "TOKEN_GENERATION_FAIL_CODE"
+msgstr "API token generation failed"
+
+msgid "USER_TOKEN_UPDATE_FAIL_CODE"
+msgstr "User's token update failed"
+
+msgid "VALID_IMAGE_IS_REQUIRED"
+msgstr "Valid image is required.Image upload failed."
+
+msgid "IMAGE_SIZE_EXCEED_MAX_LIMIT"
+msgstr "Image size exceed maximum allowed limit"
+
+msgid "NICK_NAME_ALREADY_EXIST"
+msgstr "중복된 닉네임이 존재합니다."
+
+msgid "API_TOKEN_NOT_VALID"
+msgstr "API token is not valid"
+
+msgid "API_TOKEN_IS_EXPIRED"
+msgstr "API token has benn expired already"
+
+msgid "USER_ACCOUNT_NOT_ACTIVATED_YET"
+msgstr "Account is not activated yet"
+
+msgid "PIN_IS_NOT_VALID"
+msgstr "입력하신 코드가 맞지 않습니다. 다시 시도해 주세요."
+
+msgid "INVALID_LANGUAGE_CODE_SENT"
+msgstr "Language code is not valid"
+
+msgid "NICKNAME_LENGTH_AND_ENLGIH_CODE"
+msgstr "닉네임은 영문2~16자로 입력해주세요. "
+
+msgid "PASSWORD_LENGTH_AND_ALPHANUMERIC_CODE"
+msgstr "비밀번호는 영문 대소문자, 숫자 조합 8~12자로 입력해주세요. "
+
+msgid "NICKNAME_IS_NOT_REGISTERED_CODE"
+msgstr "Nickname is not registered"
+
+msgid "NICKNAME_AND_PASSWORD_DONT_MATCH_CODE"
+msgstr "닉네임과 비밀번호가 일치하지 않습니다. "
+
+msgid "EMAIL_IS_NOT_REGISTERED_CODE"
+msgstr "가입되지 않은 이메일입니다. 다시 확인해 주세요."
+
+msgid "VERIFICATION_EMAIL_HAS_BEEN_SENT_REGISTRATION_CODE"
+msgstr ""
+"입력하신 이메일로 비밀번호 정보를 보냈습니다. \n"
+"이메일을 확인해주세요."
+
+msgid "VERIFICATION_EMAIL_HAS_BEEN_SENT_FORGOT_PASS_CODE"
+msgstr "Verification e-mail has been sent to your e-mail.Please follow the instructions in the e-mail to retrieve your account"
+
+msgid "PIN_IS_EXPIRED_CODE"
+msgstr "Pin is expired"
+
+msgid "UNKNOWN_ERROR_CODE"
+msgstr "Exception occurred or unknown error"
+
+msgid "Email"
+msgstr "이메일"
+
+msgid "Password"
+msgstr "암호"
+
+msgid "Login"
+msgstr "로그인"
+
+msgid "Forgot your password?"
+msgstr "비밀번호를 잊어 버렸습니까?"
+
+msgid "login_err_msg"
+msgstr "잘못된 사용자 이름이나 암호를 입력합니다. 다시 시도하십시오"
+
+msgid "Reset Password"
+msgstr "암호를 재설정"
+
+msgid "forgot_password_desc"
+msgstr "당신이 로그인하는 데 사용되는 이메일 주소를 입력"
+
+msgid "forgot_password_err"
+msgstr "입력 한 이메일 ID가 우리와 함께 등록되어 있지 않습니다. 다시 시도하십시오."
+
+msgid "forgot_password_success"
+msgstr "이메일이 성공적으로 비밀번호를 재설정하는 방법에 귀하의 이메일로 전송되었습니다."
+
+msgid "new_password"
+msgstr "새 암호를 입력"
+
+msgid "re_new_password"
+msgstr "새 암호 다시 입력"
+
+msgid "reset_password_btn"
+msgstr "암호를 재설정"
+
+msgid "reset_password_error"
+msgstr "잘못된 링크. 비밀번호를 재설정하려는 경우 {0}여기에</a> 를 클릭하십시오."
+
+msgid "reset_password_success"
+msgstr "비밀번호가 성공적으로 재설정되었습니다. 새 비밀번호를 사용하여 로그인하십시오."
+
+msgid "next_btn"
+msgstr "다음"
+
+msgid "ADD_CONTENT_TITLE_KR"
+msgstr "제목 한국어"
+
+msgid "ADD_CONTENT_TITLE_EN"
+msgstr "제목 영어"
+
+msgid "ADD_CONTENT_TITLE_JP"
+msgstr "제목 일본어"
+
+msgid "ADD_CONTENT_TITLE_CN"
+msgstr "제목 중국어"
+
+msgid "ADD_CONTENT_DESC_KR"
+msgstr "한국어"
+
+msgid "ADD_CONTENT_DESC_EN"
+msgstr "영어"
+
+msgid "ADD_CONTENT_DESC_JP"
+msgstr "일본의"
+
+msgid "ADD_CONTENT_DESC_CN"
+msgstr "중국어"
+
+msgid "CONTENT_PAGE_HEADING"
+msgstr "명부"
+
+msgid "CONTENT_SUBJECT"
+msgstr "제목"
+
+msgid "CONTENT_AUTHOR"
+msgstr "저자"
+
+msgid "CONTENT_CATEGORY"
+msgstr "범주"
+
+msgid "CONTENT_TAGS"
+msgstr "태그"
+
+msgid "CONTENT_LANGUAGE"
+msgstr "언어"
+
+msgid "CONTENT_COMMENTS"
+msgstr "댓글"
+
+msgid "CONTENT_PUBLISH_DATE"
+msgstr "날짜"
+
+msgid "CONTENT_THUMBNAIL"
+msgstr "미리보기"
+
+msgid "CONTENT_SHOW_ALL"
+msgstr "모든"
+
+msgid "CONTENT_SHOW_PUBLISHED"
+msgstr "게시"
+
+msgid "CONTENT_SHOW_SEEZURE"
+msgstr "발작"
+
+msgid "CONTENT_SHOW_INDIVIDUAL"
+msgstr "개별 기사"
+
+msgid "CONTENT_SHOW_TRASH"
+msgstr "휴지통"
+
+msgid "CONTENT_SEARCH_BTN"
+msgstr "기사 검색"
+
+msgid "CONTENT_APPLICATION_BTN"
+msgstr "신청"
+
+msgid "CONTENT_FILTER_BTN"
+msgstr "필터"
+
+msgid "NEXT_BTN"
+msgstr "Next"
+
+msgid "COUNTDOWN_TITLE"
+msgstr "Mobile App Content Countdown"
+
+msgid "ADD_CONTENT_COUNTDOWN_ACTIVATE"
+msgstr "COUNTDOWN ACTIVATED"
+
+msgid "ADD_CONTENT_COUNTDOWN_DESC"
+msgstr "It displays the countdown to the mobile content."
+
+msgid "COUNTDOWN_END"
+msgstr "End Date"
+
+msgid "COUNTDOWN_END_DESC"
+msgstr "Set the end date countdown. Mobile content, and displays the remaining time,until end date"
+
+msgid "COUNTDOWN"
+msgstr "Countdown"
+
+msgid "DAYS"
+msgstr "Days"
+
+msgid "HOURS"
+msgstr "Hours"
+
+msgid "MINUTES"
+msgstr "Minutes"
+
+msgid "SECONDS"
+msgstr "Seconds"
+
+msgid "YOUKU_ADDRESS"
+msgstr "Youku Iframe Address"
+
+msgid "YOUKU_LABEL"
+msgstr "Youku Iframe Address"
+
+msgid "FROM_DATE"
+msgstr "From Date"
+
+msgid "TO_DATE"
+msgstr "To Date"

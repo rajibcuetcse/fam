@@ -1,0 +1,285 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja_JP\n"
+"X-Generator: Poedit 1.8.5\n"
+
+msgid "NICKNAME_NOT_SENT_CODE"
+msgstr "Nickname is required"
+
+msgid "EMAIL_ALREADY_EXIST_IN_SYSTEM"
+msgstr "Email already exist in system"
+
+msgid "USER_COULD_NOT_REGISTERED_CODE"
+msgstr "User could not be registered"
+
+msgid "USER_NOT_FOUND_CODE"
+msgstr "ç»é²ãããªãã£ãæç§°ã§ãã"
+
+msgid "LOG_INSERTION_FAILED_CODE"
+msgstr "Log insertion failed"
+
+msgid "USER_ID_IS_REQUIRED_CODE"
+msgstr "User id required"
+
+msgid "VALID_EMAIL_IS_REQUIRED_CODE"
+msgstr "Please use a valid email address"
+
+msgid "SOCIAL_ID_REQUIRED_CODE"
+msgstr "Social is required"
+
+msgid "PASSWORD_IS_REQUIRED_CODE"
+msgstr "Password is required"
+
+msgid "IS_REC_MARKETING_EMAIL_CODE"
+msgstr "The field is_rec_marketing_email must be either '1' OR '0'"
+
+msgid "USER_TYPE_REQUIRED_CODE"
+msgstr "User_type value is not correct"
+
+msgid "API_TOKEN_NOT_SET_CODE"
+msgstr "api_token has not been sent"
+
+msgid "PLATFORM_FIELD_REQUIRED_CODE"
+msgstr "Platform field is required"
+
+msgid "UDID_FIELD_REQUIRED_CODE"
+msgstr "udid field is required"
+
+msgid "INPUT_DATA_NOT_FOUND_CODE"
+msgstr "Input data not found"
+
+msgid "INPUT_DATA_KEY_NAME_NOT_CORRECT_CODE"
+msgstr "Required input data key name is not correct or not sent"
+
+msgid "INPUT_DATA_VALUE_FOUND_EMPTY_CODE"
+msgstr "Required input value found empty"
+
+msgid "TOKEN_GENERATION_FAIL_CODE"
+msgstr "API token generation failed"
+
+msgid "USER_TOKEN_UPDATE_FAIL_CODE"
+msgstr "User's token update failed"
+
+msgid "VALID_IMAGE_IS_REQUIRED"
+msgstr "Valid image is required.Image upload failed."
+
+msgid "IMAGE_SIZE_EXCEED_MAX_LIMIT"
+msgstr "Image size exceed maximum allowed limit"
+
+msgid "NICK_NAME_ALREADY_EXIST"
+msgstr "éè¤ãããããã¯ãã¼ã ãå­å¨ãã¾ã"
+
+msgid "API_TOKEN_NOT_VALID"
+msgstr "API token is not valid"
+
+msgid "API_TOKEN_IS_EXPIRED"
+msgstr "API token has benn expired already"
+
+msgid "USER_ACCOUNT_NOT_ACTIVATED_YET"
+msgstr "Account is not activated yet"
+
+msgid "PIN_IS_NOT_VALID"
+msgstr "å¥åããã³ã¼ããåããªãã§ãã åã³è©¦ã¿ã¦ãã ãã"
+
+msgid "INVALID_LANGUAGE_CODE_SENT"
+msgstr "Language code is not valid"
+
+msgid "NICKNAME_LENGTH_AND_ENLGIH_CODE"
+msgstr "ããã¯ãã¼ã ã¯è±æ2~16èã§å¥åãã¦ãã ããã"
+
+msgid "PASSWORD_LENGTH_AND_ALPHANUMERIC_CODE"
+msgstr "æè¨¼çªå·ã¯ãè±å¤§æå­ã»å°æå­ãæ°å­ã®8~12èã§å¥åãã¦ãã ããã"
+
+msgid "NICKNAME_IS_NOT_REGISTERED_CODE"
+msgstr "Nickname is not registered"
+
+msgid "NICKNAME_AND_PASSWORD_DONT_MATCH_CODE"
+msgstr "ããã¯ãã¼ã ã¨ãã¹ã¯ã¼ããä¸è´ãã¾ããã"
+
+msgid "EMAIL_IS_NOT_REGISTERED_CODE"
+msgstr "å å¥ãã¦ããªãã¡ã¼ã«ã§ãã ããä¸åº¦ç¢ºèªããé¡ããã¾ãã"
+
+msgid "VERIFICATION_EMAIL_HAS_BEEN_SENT_REGISTRATION_CODE"
+msgstr "å¥åãã¦ããã ããã¡ã¼ã«ã§ãã¹ã¯ã¼ãæå ±ãéãã¾ããã"
+
+msgid "VERIFICATION_EMAIL_HAS_BEEN_SENT_FORGOT_PASS_CODE"
+msgstr "Verification e-mail has been sent to your e-mail.Please follow the instructions in the e-mail to retrieve your account"
+
+msgid "PIN_IS_EXPIRED_CODE"
+msgstr "Pin is expired"
+
+msgid "UNKNOWN_ERROR_CODE"
+msgstr "Exception occurred or unknown error"
+
+msgid "Email"
+msgstr "メール"
+
+msgid "Password"
+msgstr "パスワード"
+
+msgid "Login"
+msgstr "ログイン"
+
+msgid "Forgot your password?"
+msgstr "パスワードをお忘れですか？"
+
+msgid "login_err_msg"
+msgstr "間違ったユーザー名またはパスワード。もう一度やり直してください"
+
+msgid "Reset Password"
+msgstr "パスワードのリセット"
+
+msgid "forgot_password_desc"
+msgstr "あなたがログインするために使用するメールアドレスを入力してください"
+
+msgid "forgot_password_err"
+msgstr "あなたが入力した電子メールIDは、私たちと一緒に登録されていません。もう一度やり直してください。"
+
+msgid "forgot_password_success"
+msgstr "電子メールは正常にパスワードをリセットするための命令を使用して電子メールに送信されました。"
+
+msgid "new_password"
+msgstr "新しいパスワードを入力"
+
+msgid "re_new_password"
+msgstr "新しいパスワード再入力"
+
+msgid "reset_password_btn"
+msgstr "パスワードのリセット"
+
+msgid "reset_password_error"
+msgstr "無効なリンク。あなたのパスワードをリセットしたい場合は、{0}ここに</a>をクリックしてください。"
+
+msgid "reset_password_success"
+msgstr "パスワードが正常にリセットされています。新しいパスワードを使用してログインしてください。"
+
+msgid "next_btn"
+msgstr "次"
+
+msgid "ADD_CONTENT_TITLE_KR"
+msgstr "タイトル韓国"
+
+msgid "ADD_CONTENT_TITLE_EN"
+msgstr "タイトル英語"
+
+msgid "ADD_CONTENT_TITLE_JP"
+msgstr "タイトル日本語"
+
+msgid "ADD_CONTENT_TITLE_CN"
+msgstr "タイトル中国"
+
+msgid "ADD_CONTENT_DESC_KR"
+msgstr "韓国語"
+
+msgid "ADD_CONTENT_DESC_EN"
+msgstr "英語"
+
+msgid "ADD_CONTENT_DESC_JP"
+msgstr "日本語"
+
+msgid "ADD_CONTENT_DESC_CN"
+msgstr "中国語"
+
+msgid "CONTENT_PAGE_HEADING"
+msgstr "リスト"
+
+msgid "CONTENT_SUBJECT"
+msgstr "被験者"
+
+msgid "CONTENT_AUTHOR"
+msgstr "著者"
+
+msgid "CONTENT_CATEGORY"
+msgstr "カテゴリ"
+
+msgid "CONTENT_TAGS"
+msgstr "タグ"
+
+msgid "CONTENT_LANGUAGE"
+msgstr "言語"
+
+msgid "CONTENT_COMMENTS"
+msgstr "注釈"
+
+msgid "CONTENT_PUBLISH_DATE"
+msgstr "日付"
+
+msgid "CONTENT_THUMBNAIL"
+msgstr "サムネイル"
+
+msgid "CONTENT_SHOW_ALL"
+msgstr "すべて"
+
+msgid "CONTENT_SHOW_PUBLISHED"
+msgstr "公開されました"
+
+msgid "CONTENT_SHOW_SEEZURE"
+msgstr "発作"
+
+msgid "CONTENT_SHOW_INDIVIDUAL"
+msgstr "個々の記事"
+
+msgid "CONTENT_SHOW_TRASH"
+msgstr "ごみ"
+
+msgid "CONTENT_SEARCH_BTN"
+msgstr "記事を探します"
+
+msgid "CONTENT_APPLICATION_BTN"
+msgstr "アプリケーション"
+
+msgid "CONTENT_FILTER_BTN"
+msgstr "フィルタ"
+
+msgid "NEXT_BTN"
+msgstr "Next"
+
+msgid "COUNTDOWN_TITLE"
+msgstr "Mobile App Content Countdown"
+
+msgid "ADD_CONTENT_COUNTDOWN_ACTIVATE"
+msgstr "COUNTDOWN ACTIVATED"
+
+msgid "ADD_CONTENT_COUNTDOWN_DESC"
+msgstr "It displays the countdown to the mobile content."
+
+msgid "COUNTDOWN_END"
+msgstr "End Date"
+
+msgid "COUNTDOWN_END_DESC"
+msgstr "Set the end date countdown. Mobile content, and displays the remaining time,until end date"
+
+msgid "COUNTDOWN"
+msgstr "Countdown"
+
+msgid "DAYS"
+msgstr "Days"
+
+msgid "HOURS"
+msgstr "Hours"
+
+msgid "MINUTES"
+msgstr "Minutes"
+
+msgid "SECONDS"
+msgstr "Seconds"
+
+msgid "YOUKU_ADDRESS"
+msgstr "Youku Iframe Address"
+
+msgid "YOUKU_LABEL"
+msgstr "Youku Iframe Address"
+
+msgid "FROM_DATE"
+msgstr "From Date"
+
+msgid "TO_DATE"
+msgstr "To Date"

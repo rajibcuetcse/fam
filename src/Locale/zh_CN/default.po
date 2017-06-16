@@ -1,0 +1,287 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 1.8.5\n"
+
+msgid "NICKNAME_NOT_SENT_CODE"
+msgstr "Nickname is required"
+
+msgid "EMAIL_ALREADY_EXIST_IN_SYSTEM"
+msgstr "Email already exist in system"
+
+msgid "USER_COULD_NOT_REGISTERED_CODE"
+msgstr "User could not be registered"
+
+msgid "USER_NOT_FOUND_CODE"
+msgstr "未登记的昵称。"
+
+msgid "LOG_INSERTION_FAILED_CODE"
+msgstr "Log insertion failed"
+
+msgid "USER_ID_IS_REQUIRED_CODE"
+msgstr "User id required"
+
+msgid "VALID_EMAIL_IS_REQUIRED_CODE"
+msgstr "正确的电子邮件的形式,请输入。"
+
+msgid "SOCIAL_ID_REQUIRED_CODE"
+msgstr "Social is required"
+
+msgid "PASSWORD_IS_REQUIRED_CODE"
+msgstr "Password is required"
+
+msgid "IS_REC_MARKETING_EMAIL_CODE"
+msgstr "The field is_rec_marketing_email must be either '1' OR '0'"
+
+msgid "USER_TYPE_REQUIRED_CODE"
+msgstr "User_type value is not correct"
+
+msgid "API_TOKEN_NOT_SET_CODE"
+msgstr "api_token has not been sent"
+
+msgid "PLATFORM_FIELD_REQUIRED_CODE"
+msgstr "Platform field is required"
+
+msgid "UDID_FIELD_REQUIRED_CODE"
+msgstr "udid field is required"
+
+msgid "INPUT_DATA_NOT_FOUND_CODE"
+msgstr "Input data not found"
+
+msgid "INPUT_DATA_KEY_NAME_NOT_CORRECT_CODE"
+msgstr "Required input data key name is not correct or not sent"
+
+msgid "INPUT_DATA_VALUE_FOUND_EMPTY_CODE"
+msgstr "Required input value found empty"
+
+msgid "TOKEN_GENERATION_FAIL_CODE"
+msgstr "API token generation failed"
+
+msgid "USER_TOKEN_UPDATE_FAIL_CODE"
+msgstr "User's token update failed"
+
+msgid "VALID_IMAGE_IS_REQUIRED"
+msgstr "Valid image is required.Image upload failed."
+
+msgid "IMAGE_SIZE_EXCEED_MAX_LIMIT"
+msgstr "Image size exceed maximum allowed limit"
+
+msgid "NICK_NAME_ALREADY_EXIST"
+msgstr "重复的绰号。"
+
+msgid "API_TOKEN_NOT_VALID"
+msgstr "API token is not valid"
+
+msgid "API_TOKEN_IS_EXPIRED"
+msgstr "API token has benn expired already"
+
+msgid "USER_ACCOUNT_NOT_ACTIVATED_YET"
+msgstr "Account is not activated yet"
+
+msgid "PIN_IS_NOT_VALID"
+msgstr "您输入的密码不匹配。 请再尝试一次"
+
+msgid "INVALID_LANGUAGE_CODE_SENT"
+msgstr "Language code is not valid"
+
+msgid "NICKNAME_LENGTH_AND_ENLGIH_CODE"
+msgstr "在2至16的英文昵称,请输入。"
+
+msgid "PASSWORD_LENGTH_AND_ALPHANUMERIC_CODE"
+msgstr "密码是大小写英文,数字8至12人组合,请输入。"
+
+msgid "NICKNAME_IS_NOT_REGISTERED_CODE"
+msgstr "未登记的昵称。"
+
+msgid "NICKNAME_AND_PASSWORD_DONT_MATCH_CODE"
+msgstr "网名和密码不一致。"
+
+msgid "EMAIL_IS_NOT_REGISTERED_CODE"
+msgstr "用户的电子邮件。 再确认一下。"
+
+msgid "VERIFICATION_EMAIL_HAS_BEEN_SENT_REGISTRATION_CODE"
+msgstr ""
+"您输入的密码信息,以电子邮件寄来的。 \n"
+"邮件确认一下。"
+
+msgid "VERIFICATION_EMAIL_HAS_BEEN_SENT_FORGOT_PASS_CODE"
+msgstr "Verification e-mail has been sent to your e-mail.Please follow the instructions in the e-mail to retrieve your account"
+
+msgid "PIN_IS_EXPIRED_CODE"
+msgstr "Pin is expired"
+
+msgid "UNKNOWN_ERROR_CODE"
+msgstr "Exception occurred or unknown error"
+
+msgid "Email"
+msgstr "电子邮件"
+
+msgid "Password"
+msgstr "密码"
+
+msgid "Login"
+msgstr "登录"
+
+msgid "Forgot your password?"
+msgstr "忘记密码了吗？"
+
+msgid "login_err_msg"
+msgstr "错误的用户名或密码。 请再试一次"
+
+msgid "Reset Password"
+msgstr "重设密码"
+
+msgid "forgot_password_desc"
+msgstr "输入您用于登录您的电子邮件地址"
+
+msgid "forgot_password_err"
+msgstr "您输入的电子邮件ID是没有注册登记。 请再试一次。"
+
+msgid "forgot_password_success"
+msgstr "电子邮件已成功发送到您的电子邮件与说明重置您的密码。"
+
+msgid "new_password"
+msgstr "새 암호를 입력"
+
+msgid "re_new_password"
+msgstr "再次输入新密码"
+
+msgid "reset_password_btn"
+msgstr "重设密码"
+
+msgid "reset_password_error"
+msgstr "链接无效。请点击{0}这里</a>，如果你想重置密码。"
+
+msgid "reset_password_success"
+msgstr "您的密码已成功重置。使用新密码登录。"
+
+msgid "next_btn"
+msgstr "下一个"
+
+msgid "ADD_CONTENT_TITLE_KR"
+msgstr "韩国称号"
+
+msgid "ADD_CONTENT_TITLE_EN"
+msgstr "职称英语"
+
+msgid "ADD_CONTENT_TITLE_JP"
+msgstr "标题日本"
+
+msgid "ADD_CONTENT_TITLE_CN"
+msgstr "中国标题"
+
+msgid "ADD_CONTENT_DESC_KR"
+msgstr "朝鲜的"
+
+msgid "ADD_CONTENT_DESC_EN"
+msgstr "英语"
+
+msgid "ADD_CONTENT_DESC_JP"
+msgstr "日本"
+
+msgid "ADD_CONTENT_DESC_CN"
+msgstr "中国"
+
+msgid "CONTENT_PAGE_HEADING"
+msgstr "名单"
+
+msgid "CONTENT_SUBJECT"
+msgstr "学科"
+
+msgid "CONTENT_AUTHOR"
+msgstr "笔者"
+
+msgid "CONTENT_CATEGORY"
+msgstr "类别"
+
+msgid "CONTENT_TAGS"
+msgstr "标签"
+
+msgid "CONTENT_LANGUAGE"
+msgstr "语言"
+
+msgid "CONTENT_COMMENTS"
+msgstr "评论"
+
+msgid "CONTENT_PUBLISH_DATE"
+msgstr "日期"
+
+msgid "CONTENT_THUMBNAIL"
+msgstr "缩略图"
+
+msgid "CONTENT_SHOW_ALL"
+msgstr "所有"
+
+msgid "CONTENT_SHOW_PUBLISHED"
+msgstr "发布时间"
+
+msgid "CONTENT_SHOW_SEEZURE"
+msgstr "发作"
+
+msgid "CONTENT_SHOW_INDIVIDUAL"
+msgstr "个别条款"
+
+msgid "CONTENT_SHOW_TRASH"
+msgstr "垃圾"
+
+msgid "CONTENT_SEARCH_BTN"
+msgstr "文章搜索"
+
+msgid "CONTENT_APPLICATION_BTN"
+msgstr "应用"
+
+msgid "CONTENT_FILTER_BTN"
+msgstr "过滤器"
+
+msgid "NEXT_BTN"
+msgstr "Next"
+
+msgid "COUNTDOWN_TITLE"
+msgstr "Mobile App Content Countdown"
+
+msgid "ADD_CONTENT_COUNTDOWN_ACTIVATE"
+msgstr "COUNTDOWN ACTIVATED"
+
+msgid "ADD_CONTENT_COUNTDOWN_DESC"
+msgstr "It displays the countdown to the mobile content."
+
+msgid "COUNTDOWN_END"
+msgstr "End Date"
+
+msgid "COUNTDOWN_END_DESC"
+msgstr "Set the end date countdown. Mobile content, and displays the remaining time,until end date"
+
+msgid "COUNTDOWN"
+msgstr "Countdown"
+
+msgid "DAYS"
+msgstr "Days"
+
+msgid "HOURS"
+msgstr "Hours"
+
+msgid "MINUTES"
+msgstr "Minutes"
+
+msgid "SECONDS"
+msgstr "Seconds"
+
+msgid "YOUKU_ADDRESS"
+msgstr "Youku Iframe Address"
+
+msgid "YOUKU_LABEL"
+msgstr "Youku Iframe Address"
+
+msgid "FROM_DATE"
+msgstr "From Date"
+
+msgid "TO_DATE"
+msgstr "To Date"

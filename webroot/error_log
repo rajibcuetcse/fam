@@ -1,0 +1,4 @@
+[06-Sep-2016 02:12:03 UTC] PHP Fatal error:  Class 'DateTimeImmutable' not found in /home/chtl/public_html/cms/vendor/cakephp/chronos/src/Chronos.php on line 50
+[06-Sep-2016 02:24:54 UTC] PHP Fatal error:  Class 'DateTimeImmutable' not found in /home/chtl/public_html/cms/vendor/cakephp/chronos/src/Chronos.php on line 50
+[06-Sep-2016 06:09:55 UTC] PHP Fatal error:  Class 'DateTimeImmutable' not found in /home/chtl/public_html/cms/vendor/cakephp/chronos/src/Chronos.php on line 50
+[14-Sep-2016 01:14:53 UTC] PHP Fatal error:  Class 'DateTimeImmutable' not found in /home/chtl/public_html/cms/vendor/cakephp/chronos/src/Chronos.php on line 50

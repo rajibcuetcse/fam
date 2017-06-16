@@ -1,0 +1,429 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_US\n"
+"X-Generator: Poedit 1.8.7\n"
+
+msgid "COMPANY_NAME"
+msgstr "Company Name"
+
+msgid "ADDRESS_ONE"
+msgstr "Address 1"
+
+msgid "ADDRESS_TWO"
+msgstr "Address 2"
+
+msgid "POSTCODE"
+msgstr "Postcode"
+
+msgid "PHONE"
+msgstr "Phone"
+
+msgid "EMAIL"
+msgstr "E-mail"
+
+msgid "FAX"
+msgstr "Fax"
+
+msgid "CITY"
+msgstr "City"
+
+msgid "STATE"
+msgstr "State"
+
+msgid "COUNTRY"
+msgstr "Country"
+
+msgid "LOGO"
+msgstr "Logo"
+
+msgid "REGISTRATION_NO"
+msgstr "Registration No"
+
+msgid "TAX_NO"
+msgstr "Tax No"
+
+msgid "NO_OF_EMPLOYEES"
+msgstr "No of Employees"
+
+msgid "COMPANY_BASIC_INFO"
+msgstr "Company Basic Info"
+
+msgid "SUPER_ADMIN"
+msgstr "Super Admin"
+
+msgid "NEXT"
+msgstr "Next"
+
+msgid "LANGUAGE"
+msgstr "Language"
+
+msgid "USERNAME"
+msgstr "Username"
+
+msgid "PASSWORD"
+msgstr "Password"
+
+msgid "COMPANY"
+msgstr "Company"
+
+msgid "BUSINESS_INFO"
+msgstr "Business Info"
+
+msgid "SAVE"
+msgstr "Save"
+
+msgid "CMMI_LEVEL"
+msgstr "Cmmi Level"
+
+msgid "YEARLY_REVENUE"
+msgstr "Yearly Revenue"
+
+msgid "COMPANIES"
+msgstr "Companies"
+
+msgid "ADD_COMPANY"
+msgstr "Add Company"
+
+msgid "COMPANY_MANAGEMENT"
+msgstr "Company Management"
+
+msgid "EDIT"
+msgstr "Edit"
+
+msgid "DELETE"
+msgstr "Delete"
+
+msgid "STATUS"
+msgstr "Status"
+
+msgid "MASTER_DATA"
+msgstr "Master Data"
+
+msgid "MODULES"
+msgstr "Modules"
+
+msgid "ADD_MODULE"
+msgstr "Add Module"
+
+msgid "MODULE_NAME"
+msgstr "Module Name"
+
+msgid "MODULE_ID"
+msgstr "Module Id"
+
+msgid "MODULE_MANAGEMENT"
+msgstr "Module Management"
+
+msgid "SUB_MODULE_MANAGEMENT"
+msgstr "Submodule Management"
+
+msgid "PAGES_MANAGEMENT"
+msgstr "Pages Management"
+
+msgid "ADD_SUB_MODULE"
+msgstr "Add Submodule"
+
+msgid "SUB_MODULE_NAME"
+msgstr "Submodule Name"
+
+msgid "SUB_MODULE_ID"
+msgstr "Submodule Id"
+
+msgid "SUB_MODULES"
+msgstr "Submodules"
+
+msgid "ADD_PAGE"
+msgstr "Add Page"
+
+msgid "PAGE_ID"
+msgstr "Page Id"
+
+msgid "PAGE_NAME"
+msgstr "Page Name"
+
+msgid "PAGES"
+msgstr "Pages"
+
+msgid "DASHBOARD"
+msgstr "Dashboard"
+
+msgid "ACCESS_CONTROL"
+msgstr "Access Control"
+
+msgid "CONTENT_MANAGEMENT"
+msgstr "Content Management"
+
+msgid "SETTINGS"
+msgstr "Settings"
+
+msgid "LIST"
+msgstr "List"
+
+msgid "CREATE_COMPANY"
+msgstr "Create Company"
+
+msgid "EDIT_COMPANY"
+msgstr "Edit Company"
+
+msgid "RE_TYPE_PASSWORD"
+msgstr "Retype password"
+
+msgid "SEARCH"
+msgstr "Search"
+
+msgid "SEARCH_COMPANY"
+msgstr "Search Company"
+
+msgid "SEARCH_MODULE"
+msgstr "Search Module"
+
+msgid "SEARCH_SUB_MODULE"
+msgstr "Search Submodule"
+
+msgid "SEARCH_PAGE"
+msgstr "Search Page"
+
+msgid "VIEW"
+msgstr "View"
+
+msgid "CREATED_ON"
+msgstr "Created On"
+
+msgid "MODIFIED_ON"
+msgstr "Modified On"
+
+msgid "SELECT_COUNTRY"
+msgstr "Select Country"
+
+msgid "ENTER_COMPANY_NAME"
+msgstr "Enter the company Name"
+
+msgid "ENTER_ADDRESS"
+msgstr "Enter Address"
+
+msgid "ARTISTS_AND_GROUPS"
+msgstr "Artists and Groups"
+
+msgid "ARTISTS"
+msgstr "Artists"
+
+msgid "ADD_ARTISTS"
+msgstr "Add Artist"
+
+msgid "DELETE_ARTISTS"
+msgstr "Delete Artist"
+
+msgid "EDIT_ARTIST"
+msgstr "Edit Artist"
+
+msgid "ARTIST_MANAGEMENT"
+msgstr "Artist Management"
+
+msgid "GROUP_MANAGEMENT"
+msgstr "Group Management"
+
+msgid "ARTIST_NAME"
+msgstr "Name"
+
+msgid "ARTIST_CATEGORY"
+msgstr "Category"
+
+msgid "ARTIST_PICTURE"
+msgstr "Picture"
+
+msgid "SEARCH_ARTISTS"
+msgstr "Search Artists"
+
+msgid "ACTIVE"
+msgstr "Active"
+
+msgid "IN_ACTIVE"
+msgstr "In Active"
+
+msgid "ADD_ARTIST"
+msgstr "Add Artist"
+
+msgid "GROUPS"
+msgstr "Groups"
+
+msgid "SEARCH_GROUPS"
+msgstr "Search Groups"
+
+msgid "ADD_GROUP"
+msgstr "Add Group"
+
+msgid "GROUP_NAME"
+msgstr "Name"
+
+msgid "GROUP_TYPE"
+msgstr "Type"
+
+msgid "GROUP_PICTURE"
+msgstr "Picture"
+
+msgid "FREE"
+msgstr "Free"
+
+msgid "SELECT_ARTISTS"
+msgstr "Select Artists"
+
+msgid "CREATE_ARTIST"
+msgstr "Create Artist"
+
+msgid "NAME_EN"
+msgstr "Name En"
+
+msgid "NAME_JA"
+msgstr "Name Ja"
+
+msgid "NAME_KO"
+msgstr "Name Ko"
+
+msgid "NAME_ZH"
+msgstr "Name Zh"
+
+msgid "PICTURE_ARTIST"
+msgstr "Profile Picture"
+
+msgid "CATEGORY"
+msgstr "Category"
+
+msgid "ADDRESS"
+msgstr "Address"
+
+msgid "NICKNAME"
+msgstr "Username"
+
+msgid "ARTIST"
+msgstr "Artist"
+
+msgid "USER"
+msgstr "User"
+
+msgid "GROUP"
+msgstr "Group"
+
+msgid "TIME_LINE_ARTIST"
+msgstr "Timeline Artist"
+
+msgid "CREATE_GROUP"
+msgstr "Create Group"
+
+msgid "EDIT_GROUP"
+msgstr "Edit Group"
+
+msgid "POST_DESCRIPTION"
+msgstr "Post Description"
+
+msgid "UPLOADED_BY"
+msgstr "Uploaded By"
+
+msgid "RELATED_ARTICLES"
+msgstr "Related Articles"
+
+msgid "USED_TAGS"
+msgstr "Used Tags"
+
+msgid "EXPIRY_DATE"
+msgstr "Expiry Date"
+
+msgid "PRICE_CODE_MANAGEMENT"
+msgstr "Price Code Management"
+
+msgid "ADD_PRICE_CODE"
+msgstr "Add Price Code"
+
+msgid "GLOBAL_CONFIGURATION"
+msgstr "Global Configuration"
+
+msgid "UNLOCKING_RATES"
+msgstr "Unlocking Rates"
+
+msgid "PRODUCT_MANAGEMENT"
+msgstr "Product Management"
+
+msgid "PRICE_CODE"
+msgstr "Price Code"
+
+msgid "IOS"
+msgstr "iOS"
+
+msgid "ANDROID"
+msgstr "Android"
+
+msgid "WINDOWS"
+msgstr "Windows"
+
+msgid "CURRENCY"
+msgstr "Currency"
+
+msgid "CREATE_PRICE_CODE"
+msgstr "Create Price Code"
+
+msgid "CODE"
+msgstr "Code"
+
+msgid "IOS_AMOUNT"
+msgstr "iOS Amount"
+
+msgid "ANDROID_AMOUNT"
+msgstr "Android Amount"
+
+msgid "WINDOWS_AMOUNT"
+msgstr "Windows Amount"
+
+msgid "ADD_PRODUCT"
+msgstr "Add Product"
+
+msgid "PRODUCT_ID"
+msgstr "Product Id"
+
+msgid "PRODUCT_CATEGORY"
+msgstr "Category"
+
+msgid "APPLE_ID"
+msgstr "Apple Id"
+
+msgid "PRICE_TIER"
+msgstr "Price Tier"
+
+msgid "REFERENCE_NAME"
+msgstr "Reference Name"
+
+msgid "REFERENCE_VALUE"
+msgstr "Reference Value"
+
+msgid "PRODUCT"
+msgstr "Product"
+
+msgid "DISPLAY_NAME"
+msgstr "Display Name"
+
+msgid "DESCRIPTION"
+msgstr "Description"
+
+msgid "TICKETS"
+msgstr "Tickets"
+
+msgid "STARS"
+msgstr "Stars"
+
+msgid "PRODUCT_TYPE"
+msgstr "Product Type"
+
+msgid "ADD_UNLOCKING_RATE"
+msgstr "Add Unlocking Rate"
+
+msgid "NUMBER_OF_CONTENT"
+msgstr "No of Content"
+
+msgid "NUMBER_OF_PRICE"
+msgstr "No of Price"
