@@ -146,8 +146,8 @@ $profile_picture = (empty($img_path)) ? $this->request->webroot."media/companies
 <!-- Content Header (Page header) -->
 <section class="content-header">
   <h1>
-	<?php echo  current(array_keys($current_module));?>
-	<small><?php echo  current(array_keys($sub_modules));?></small>
+	<?php echo  _(current(array_keys($current_module))); ?>
+	<small><?php echo  _(current(array_keys($sub_modules)));?></small>
   </h1>
 </section>
 

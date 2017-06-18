@@ -64,7 +64,7 @@
        ?>
      <li class=" treeview <?php echo in_array( $request_controller,$submodule_controller_arr)?'active':'' ?>" >
           <a href="">
-         <?php echo  $icon.'<span>'. $module['name'].'</span>' ?><i class="fa fa-angle-left pull-right"></i>
+         <?php echo  $icon.'<span>'. __($module['name']).'</span>' ?><i class="fa fa-angle-left pull-right"></i>
           </a>
                                    
           <ul class="treeview-menu">
@@ -77,7 +77,7 @@
            }
             
            ?>
-            <li class="<?php echo strtolower($submodule['controller_name'])==$request_controller?'active':'' ?>"><a href="<?php  echo $this->Url->build(["controller" =>$submodule['controller_name'] ,"action" => "index"]); ?>"><?php echo $sub_icon.$submodule['name'] ?></a> </li> 
+            <li class="<?php echo strtolower($submodule['controller_name'])==$request_controller?'active':'' ?>"><a href="<?php  echo $this->Url->build(["controller" =>$submodule['controller_name'] ,"action" => "index"]); ?>"><?php echo $sub_icon; echo __($submodule['name']); ?></a> </li> 
              
           <?php }
           } 

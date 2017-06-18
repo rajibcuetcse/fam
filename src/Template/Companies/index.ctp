@@ -10,7 +10,7 @@
 
 
 		<div class="col-md-6">
-			<h3 class="box-title no-margin"><span class="glyphicon glyphicon-file"></span>Companies</h3>
+			<h3 class="box-title no-margin"><span class="glyphicon glyphicon-file"></span><?php echo __('COMPANIES'); ?></h3>
 		</div>
 
 	<div class="col-md-6">

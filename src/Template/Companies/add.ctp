@@ -10,7 +10,7 @@
 
 
 		<div class="col-md-6">
-			<h3 class="box-title no-margin"><span class="glyphicon glyphicon-file"></span>Add Company</h3>
+			<h3 class="box-title no-margin"><span class="glyphicon glyphicon-file"></span><?php echo __('ADD_COMPANY'); ?></h3>
 		</div>
 
 	<div class="col-md-6">
@@ -137,7 +137,7 @@
              <div class="nav-tabs-custom">
 
              <ul class="nav nav-tabs">
-	              <li class="active"><a href="#" id="basic_info"><?php echo __('Company info'); ?></a></li>
+	              <li class="active"><a href="#" id="basic_info"><?php echo __('COMPANY_INFO'); ?></a></li>
 	              <li><a href="#" id="super_admin"><?php echo __('SUPER_ADMIN'); ?></a></li>
             </ul>
 
