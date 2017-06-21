@@ -81,7 +81,22 @@ msgid "The company could not be deleted as it contains related entities"
 msgstr "The FA could not be deleted as it contains related entities"
 
 msgid "SUPER_ADMIN"
-msgstr "Super Admin"
+msgstr "Administrator"
+
+msgid "Corporate Logo"
+msgstr "Logo"
+
+msgid "RANK_W"
+msgstr "Current Ranking (Women)"
+
+msgid "RANK_M"
+msgstr "Current Ranking (Men)"
+
+msgid "CONTACT_NAME"
+msgstr "Contact name"
+
+msgid "CONTACT_EMAIL"
+msgstr "Contact email"
 
 msgid "NEXT"
 msgstr "Next"
@@ -233,8 +248,20 @@ msgstr "Modified On"
 msgid "SELECT_COUNTRY"
 msgstr "Select Country"
 
+msgid "SELECT_FA_CONFEDERATION"
+msgstr "Select Confederation"
+
+msgid "FA_GENERAL_SECRETARY"
+msgstr "General Secretary"
+
 msgid "ENTER_COMPANY_NAME"
 msgstr "Enter the FA Name"
+
+msgid "ENTER_CONATACT_NAME"
+msgstr "Enter the contact Name"
+
+msgid "ENTER_CONATACT_EMAIL"
+msgstr "Enter the contact email"
 
 msgid "ENTER_ADDRESS"
 msgstr "Enter Address"

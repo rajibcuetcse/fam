@@ -17,6 +17,8 @@ define("REGISTRATION_EMAIL_SCHEDULE_TRACKING_FILE", "registration_email_schedule
 define("APP_EMAIL_FROM", "no-reply@ygtimes.com");
 define("APP_EMAIL_FROM_DISPLAY_NAME", "Zeerow");
 
+define("FA_CONFEDERATION", json_encode(['AFC','UEFA','CAF','CONCACAF','CONMEBOL','OFC']));
+
 
 define('LANGUAGE_CODE_ENGLISH', 'en');
 define('LANGUAGE_CODE_KOREAN', 'ko');

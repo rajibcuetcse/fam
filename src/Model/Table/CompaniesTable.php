@@ -91,6 +91,10 @@ class CompaniesTable extends Table
             ->requirePresence('country', 'create')
             ->notEmpty('country');
 
+        $validator
+            ->requirePresence('confederation', 'create')
+            ->notEmpty('confederation');
+
 //        $validator
 //             ->add('registration_no', 'valid', ['rule' => 'numeric'])
 //            ->requirePresence('registration_no', 'create')

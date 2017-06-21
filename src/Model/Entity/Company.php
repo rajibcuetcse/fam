@@ -8,6 +8,8 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string $name
+ * @property string $cname
+ * @property string $cemail
  * @property string $address1
  * @property string $address2
  * @property string $postcode
@@ -17,8 +19,12 @@ use Cake\ORM\Entity;
  * @property string $city
  * @property string $state
  * @property string $country
+ * @property string $confederation
+ * @property string $general_secretary
  * @property string $logo
  * @property string $registration_no
+ * @property string $ranking_w
+ * @property string $ranking_m
  * @property string $tax_no
  * @property int $no_of_employees
  * @property bool $cmmi_level

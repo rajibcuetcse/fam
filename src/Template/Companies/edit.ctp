@@ -159,7 +159,15 @@ $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
               <div id="basic_info_div">
               <div class="form-group">
             	<?php echo $this->Form->input('company.name', ['label' => __('COMPANY_NAME'), 'class' => 'form-control required', 'value' => $company['name']]); ?>
-              </div>
+              </div>    
+              <!-- /.form-group -->
+              <div class="form-group">
+            	<?php echo $this->Form->input('company.cname', ['label' => __('CONTACT_NAME'), 'class' => 'form-control required', 'value' => $company['cname']]); ?>
+              </div>    
+              <!-- /.form-group -->
+              <div class="form-group">
+            	<?php echo $this->Form->input('company.cemail', ['label' => __('CONTACT_EMAIL'), 'class' => 'form-control required', 'value' => $company['cemail']]); ?>
+              </div>    
               <!-- /.form-group -->
               <div class="form-group">
                 <?php echo $this->Form->input('company.address1', ['label' => __('ADDRESS_ONE'), 'class' => 'form-control required', 'value' => $company['address1']]); ?>
@@ -182,7 +190,15 @@ $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
               </div>
               <!-- /.form-group -->
               <div class="form-group">
+                <?php echo $this->Form->input('company.confederation', ['empty' => __('SELECT_FA_CONFEDERATION'), 'options' => json_decode(FA_CONFEDERATION), 'class' => 'form-control required', 'default' => $company['confederation']]); ?>
+              </div>
+              <!-- /.form-group -->
+              <div class="form-group">
                 <?php echo $this->Form->input('company.postcode', ['label' => __('POSTCODE'), 'class' => 'form-control required', 'value' => $company['postcode']]); ?>
+              </div>
+              <!-- /.form-group -->
+              <div class="form-group">
+                <?php echo $this->Form->input('company.general_secretary', ['label' => __('FA_GENERAL_SECRETARY'), 'class' => 'form-control required', 'value' => $company['general_secretary']]); ?>
               </div>
               <!-- /.form-group -->
               <div class="form-group">
@@ -191,6 +207,14 @@ $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
               <!-- /.form-group -->
               <div class="form-group">
                 <?php echo $this->Form->input('company.registration_no', ['type' => 'number', 'label' => __('Tax/Registration Number'), 'class' => 'form-control', 'value' => $company['registration_no'], 'min' => 0]); ?>
+              </div>
+              <!-- /.form-group -->
+              <div class="form-group">
+                <?php echo $this->Form->input('company.ranking_w', ['type' => 'number', 'label' => __('RANK_W'), 'class' => 'form-control', 'value' => $company['ranking_w'], 'min' => 0]); ?>
+              </div>
+              <!-- /.form-group -->
+              <div class="form-group">
+                <?php echo $this->Form->input('company.ranking_m', ['type' => 'number', 'label' => __('RANK_M'), 'class' => 'form-control', 'value' => $company['ranking_m'], 'min' => 0]); ?>
               </div>
               <!-- /.form-group -->
               <div class="form-group">
