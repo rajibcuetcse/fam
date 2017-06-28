@@ -158,19 +158,19 @@ $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
 
               <div id="basic_info_div">
               <div class="form-group">
-            	<?php echo $this->Form->input('company.name', ['label' => __('COMPANY_NAME'), 'class' => 'form-control required', 'value' => $company['name']]); ?>
+            	<?php echo $this->Form->input('company.name', ['label' => ['class' => 'required','text' => __('COMPANY_NAME') ], 'class' => 'form-control required', 'value' => $company['name']]); ?>
               </div>    
               <!-- /.form-group -->
               <div class="form-group">
-            	<?php echo $this->Form->input('company.cname', ['label' => __('CONTACT_NAME'), 'class' => 'form-control required', 'value' => $company['cname']]); ?>
+            	<?php echo $this->Form->input('company.cname', ['label' => ['class' => 'required','text' => __('CONTACT_NAME')], 'required' => true, 'class' => 'form-control required', 'value' => $company['cname']]); ?>
               </div>    
               <!-- /.form-group -->
               <div class="form-group">
-            	<?php echo $this->Form->input('company.cemail', ['label' => __('CONTACT_EMAIL'), 'class' => 'form-control required', 'value' => $company['cemail']]); ?>
+            	<?php echo $this->Form->input('company.cemail', ['label' => ['class' => 'required','text' => __('CONTACT_EMAIL')], 'required' => true, 'class' => 'form-control required', 'value' => $company['cemail']]); ?>
               </div>    
               <!-- /.form-group -->
               <div class="form-group">
-                <?php echo $this->Form->input('company.address1', ['label' => __('ADDRESS_ONE'), 'class' => 'form-control required', 'value' => $company['address1']]); ?>
+                <?php echo $this->Form->input('company.address1', ['label' => ['class' => 'required','text' => __('ADDRESS_ONE')], 'class' => 'form-control required', 'value' => $company['address1']]); ?>
               </div>
               <!-- /.form-group -->
               <div class="form-group">
@@ -178,31 +178,31 @@ $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
               </div>
               <!-- /.form-group -->
               <div class="form-group">
-                <?php echo $this->Form->input('company.city', ['label' => __('CITY'), 'class' => 'form-control required', 'value' => $company['city']]); ?>
+                <?php echo $this->Form->input('company.city', ['label' => ['class' => 'required','text' => __('CITY')], 'class' => 'form-control required', 'value' => $company['city']]); ?>
               </div>
               <!-- /.form-group -->
               <div class="form-group">
-                <?php echo $this->Form->input('company.state', ['label' => __('STATE'), 'class' => 'form-control required', 'value' => $company['state']]); ?>
+                <?php echo $this->Form->input('company.state', ['label' => ['class' => 'required','text' => __('STATE')], 'class' => 'form-control required', 'value' => $company['state']]); ?>
               </div>
               <!-- /.form-group -->
               <div class="form-group">
-                <?php echo $this->Form->input('company.country', ['empty' => __('SELECT_COUNTRY'), 'options' => $countries, 'class' => 'form-control required', 'default' => array_search($company['country'], $countries)]); ?>
+                <?php echo $this->Form->input('company.country', ['label' => ['class' => 'required','text' => __('COUNTRY')],'empty' => __('SELECT_COUNTRY'), 'options' => $countries, 'class' => 'form-control required', 'default' => array_search($company['country'], $countries)]); ?>
               </div>
               <!-- /.form-group -->
               <div class="form-group">
-                <?php echo $this->Form->input('company.confederation', ['empty' => __('SELECT_FA_CONFEDERATION'), 'options' => json_decode(FA_CONFEDERATION), 'class' => 'form-control required', 'default' => $company['confederation']]); ?>
+                <?php echo $this->Form->input('company.confederation', ['label' => ['class' => 'required'],'empty' => __('SELECT_FA_CONFEDERATION'), 'options' => json_decode(FA_CONFEDERATION), 'class' => 'form-control required', 'default' => $company['confederation']]); ?>
               </div>
               <!-- /.form-group -->
               <div class="form-group">
-                <?php echo $this->Form->input('company.postcode', ['label' => __('POSTCODE'), 'class' => 'form-control required', 'value' => $company['postcode']]); ?>
+                <?php echo $this->Form->input('company.postcode', ['label' => ['class' => 'required','text' => __('POSTCODE')], 'class' => 'form-control required', 'value' => $company['postcode']]); ?>
               </div>
               <!-- /.form-group -->
               <div class="form-group">
-                <?php echo $this->Form->input('company.general_secretary', ['label' => __('FA_GENERAL_SECRETARY'), 'class' => 'form-control required', 'value' => $company['general_secretary']]); ?>
+                <?php echo $this->Form->input('company.general_secretary', ['label' => ['class' => 'required','text' => __('FA_GENERAL_SECRETARY')], 'class' => 'form-control required', 'value' => $company['general_secretary']]); ?>
               </div>
               <!-- /.form-group -->
               <div class="form-group">
-                <?php echo $this->Form->input('company.phone', ['label' => __('PHONE'), 'type' => 'tel', 'class' => 'form-control required', 'value' => $company['phone']]); ?>
+                <?php echo $this->Form->input('company.phone', ['label' => ['class' => 'required','text' => __('PHONE')], 'type' => 'tel', 'class' => 'form-control required', 'value' => $company['phone']]); ?>
               </div>
               <!-- /.form-group -->
               <div class="form-group">
@@ -210,11 +210,11 @@ $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
               </div>
               <!-- /.form-group -->
               <div class="form-group">
-                <?php echo $this->Form->input('company.ranking_w', ['type' => 'number', 'label' => __('RANK_W'), 'class' => 'form-control', 'value' => $company['ranking_w'], 'min' => 0]); ?>
+                <?php echo $this->Form->input('company.ranking_w', ['type' => 'number', 'label' => ['class' => 'required','text' => __('RANK_W')], 'class' => 'form-control', 'value' => $company['ranking_w'], 'min' => 0]); ?>
               </div>
               <!-- /.form-group -->
               <div class="form-group">
-                <?php echo $this->Form->input('company.ranking_m', ['type' => 'number', 'label' => __('RANK_M'), 'class' => 'form-control', 'value' => $company['ranking_m'], 'min' => 0]); ?>
+                <?php echo $this->Form->input('company.ranking_m', ['type' => 'number', 'label' => ['class' => 'required','text' => __('RANK_M')], 'class' => 'form-control', 'value' => $company['ranking_m'], 'min' => 0]); ?>
               </div>
               <!-- /.form-group -->
               <div class="form-group">
@@ -222,7 +222,7 @@ $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
               </div>
               <!-- /.form-group -->
               <div class="form-group">
-                <?php echo $this->Form->input('company.logo', ['type' => 'file', 'label' => __('Corporate Logo'), 'data-toggle' => 'modal', 'data-target' => '#myModal-3']); ?>
+                <?php echo $this->Form->input('company.logo', ['type' => 'file', 'label' => ['class' => 'required','text' => __('Corporate Logo')], 'data-toggle' => 'modal', 'data-target' => '#myModal-3']); ?>
               </div>
               <!-- /.form-group -->
               <ul class="list-unstyled uploaded_files">
@@ -243,19 +243,19 @@ $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
               </div>
               <!-- /.form-group -->
                <div class="form-group">
-                <?php echo $this->Form->input('cmsuser.username', ['label' => __('USERNAME'), 'class' => 'form-control required', 'required' => true, 'value' => $cmsuser['username']]); ?>
+                <?php echo $this->Form->input('cmsuser.username', ['label' => ['class' => 'required','text' => __('USERNAME')], 'class' => 'form-control required', 'required' => true, 'value' => $cmsuser['username']]); ?>
               </div>
               <!-- /.form-group -->
                <div class="form-group">
-                <?php echo $this->Form->input('cmsuser.password', ['label' => __('PASSWORD'), 'class' => 'form-control required', 'required' => true, 'value' => $cmsuser['password']]); ?>
+                <?php echo $this->Form->input('cmsuser.password', ['label' => ['class' => 'required','text' => __('PASSWORD')], 'class' => 'form-control required', 'required' => true, 'value' => $cmsuser['password']]); ?>
               </div>
               <!-- /.form-group -->
                <div class="form-group">
-                <?php echo $this->Form->input('cmsuser.retype_password', ['label' => __('RE_TYPE_PASSWORD'), 'id' => 'retype_password', 'oninput' => 'checkRetypePassword(this)', 'type' => 'password', 'placeholder' => __('RE_TYPE_PASSWORD'), 'class' => 'form-control required', 'required' => true, 'value' => $cmsuser['password']]); ?>
+                <?php echo $this->Form->input('cmsuser.retype_password', ['label' => ['class' => 'required','text' => __('RE_TYPE_PASSWORD')], 'id' => 'retype_password', 'oninput' => 'checkRetypePassword(this)', 'type' => 'password', 'placeholder' => __('RE_TYPE_PASSWORD'), 'class' => 'form-control required', 'required' => true, 'value' => $cmsuser['password']]); ?>
               </div>
               <!-- /.form-group -->
                <div class="form-group">
-                 <?php echo $this->Form->input('cmsuser.email', ['type' => 'email', 'label' => __('EMAIL'), 'pattern' => '^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$', 'class' => 'form-control required', 'value' => $cmsuser['email']]); ?>
+                 <?php echo $this->Form->input('cmsuser.email', ['type' => 'email', 'label' => ['class' => 'required','text' => __('EMAIL')], 'pattern' => '^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$', 'class' => 'form-control required', 'value' => $cmsuser['email']]); ?>
               </div>
               <!-- /.form-group -->
               <div class="form-group">

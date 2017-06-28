@@ -98,6 +98,9 @@ msgstr "Contact name"
 msgid "CONTACT_EMAIL"
 msgstr "Contact email"
 
+msgid "CONFEDERATION"
+msgstr "Confederation"
+
 msgid "NEXT"
 msgstr "Next"
 

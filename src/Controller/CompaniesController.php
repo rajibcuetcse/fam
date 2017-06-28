@@ -195,7 +195,7 @@ class CompaniesController extends AppController {
                                     'content' => APP_SERVER_HOST_URL
                             ));
 
-                            //$this->sendEmail(MANDRILL_TEMPLATE_USER_CREATION, $template_content, $cmsUser->email);
+                            $this->sendEmail(MANDRILL_TEMPLATE_USER_CREATION, $template_content, $cmsUser->email);
                         } else {
                             $this->Flash->error(__('The super admin could not be saved. Please, try again.'));
                             $this->revertPermissions($company, $cmsUser);

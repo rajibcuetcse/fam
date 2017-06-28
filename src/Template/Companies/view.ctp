@@ -104,6 +104,14 @@
             	<label><strong><?= __('Company Name:') ?></strong></label>
                 <p><?= h($company->name) ?></p>
               </div>
+              <div class="form-group">
+            	<label><strong><?= __('CONTACT_NAME') ?>:</strong></label>
+                <p><?= h($company->cname) ?></p>
+              </div>
+              <div class="form-group">
+            	<label><strong><?= __('CONTACT_EMAIL') ?>:</strong></label>
+                <p><?= h($company->cemail) ?></p>
+              </div>
               <!-- /.form-group -->
               <div class="form-group">
                 <label><strong><?= __('Address One:') ?></strong></label>
@@ -131,8 +139,18 @@
               </div>
               <!-- /.form-group -->
               <div class="form-group">
+                <label><strong><?= __('CONFEDERATION') ?>:</strong></label>
+                <p><?= h($company->confederation) ?></p>
+              </div>
+              <!-- /.form-group -->
+              <div class="form-group">
                 <label><strong><?= __('Post Code:') ?></strong></label>
                 <p><?= h($company->postcode) ?></p>
+              </div>
+              <!-- /.form-group -->
+              <div class="form-group">
+                <label><strong><?= __('FA_GENERAL_SECRETARY') ?>:</strong></label>
+                <p><?= h($company->general_secretary) ?></p>
               </div>
               <!-- /.form-group -->
               <div class="form-group">
@@ -143,6 +161,16 @@
               <div class="form-group">
                 <label><strong><?= __('Tax/Registration Number') ?></strong></label>
                 <p><?= h($company->registration_no) ?></p>
+              </div>
+              <!-- /.form-group -->
+              <div class="form-group">
+                <label><strong><?= __('RANK_W') ?>:</strong></label>
+                <p><?= h($company->ranking_w) ?></p>
+              </div>
+              <!-- /.form-group -->
+              <div class="form-group">
+                <label><strong><?= __('RANK_M') ?></strong></label>
+                <p><?= h($company->ranking_m) ?></p>
               </div>
               <!-- /.form-group -->
               <div class="form-group">

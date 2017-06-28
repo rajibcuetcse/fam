@@ -39,6 +39,8 @@
   <link rel="stylesheet" href="<?php echo $this->request->webroot; ?>admin_lte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
   <!--  cms_style.css   custom style -->
   <link rel="stylesheet" href="<?php echo $this->request->webroot; ?>css/cms_style.css">
+  <!--  custom.css   custom style -->
+  <link rel="stylesheet" href="<?php echo $this->request->webroot; ?>css/custom.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
