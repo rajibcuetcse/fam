@@ -153,7 +153,7 @@ $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
 
              <ul class="nav nav-tabs">
 	              <li class="active"><a href="#" data-toggle="tab" id="basic_info"><?php echo __('Company info'); ?></a></li>
-	              <li><a href="#" data-toggle="tab" id="super_admin"><?php echo __('SUPER_ADMIN'); ?></a></li>
+	              <li class="hide"><a href="#" data-toggle="tab" id="super_admin"><?php echo __('SUPER_ADMIN'); ?></a></li>
             </ul>
 
               <div id="basic_info_div">
@@ -231,10 +231,13 @@ $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
               <p style="width:100px;">
                   <?php echo $this->Html->image('/media/companies/' . $company->logo) ?>
               </p>
-              <div class="form-group">
+              <div class="form-group hide">
               <?= $this->Form->button(__('NEXT'), ['type' => 'button', 'class' => 'btn btn-primary tab1Next']); ?>
               </div><br/>
               <!-- /.form-group -->
+              <div class="form-group">
+                <?= $this->Form->button(__('Submit'), ['class' => 'btn btn-primary tab3Save']) ?>
+              </div><br/>
             </div>
             
             <div id="super_admin_div" class="hide">

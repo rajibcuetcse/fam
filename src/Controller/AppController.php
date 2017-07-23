@@ -200,6 +200,7 @@ abstract class AppController extends Controller
 
         $user_permissions = $session->read('user_permissions');
         $request_action = strtolower($this->request->params['action']);
+
         $pages = $this->getPages();
         if (array_key_exists($request_action, $pages)) {
             $action_page_id = $pages[$request_action];

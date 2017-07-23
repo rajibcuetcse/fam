@@ -25,7 +25,7 @@ $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
 
 
 		<div class="col-md-6">
-			<h3 class="box-title no-margin"><span class="glyphicon glyphicon-file"></span>Edit Company</h3>
+			<h3 class="box-title no-margin"><span class="glyphicon glyphicon-file"></span>Edit Profile</h3>
 		</div>
 
 	<div class="col-md-6">
@@ -41,7 +41,7 @@ $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
                         foreach ($user_permission as $permission):
                             if ($permission['page_id'] == $page_id):?>
                              
-                                    <a href="<?php echo $this->Url->build('/companies/index/'); ?>"  class="btn btn-success btn-flat btn-grid">
+                                    <a href="<?php echo $this->Url->build('/faprofiles/index/'); ?>"  class="btn btn-success btn-flat btn-grid">
                                         <i class="fa fa-list"></i>
                                         <?php echo __('LIST'); ?>
                                     </a>
@@ -153,7 +153,7 @@ $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
 
              <ul class="nav nav-tabs">
 	              <li class="active"><a href="#" data-toggle="tab" id="basic_info"><?php echo __('Company info'); ?></a></li>
-	              <li><a href="#" data-toggle="tab" id="super_admin"><?php echo __('SUPER_ADMIN'); ?></a></li>
+	              <li class="hide"><a href="#" data-toggle="tab" id="super_admin"><?php echo __('SUPER_ADMIN'); ?></a></li>
             </ul>
 
               <div id="basic_info_div">
@@ -186,14 +186,6 @@ $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
               </div>
               <!-- /.form-group -->
               <div class="form-group">
-                <?php echo $this->Form->input('company.country', ['label' => ['class' => 'required','text' => __('COUNTRY')],'empty' => __('SELECT_COUNTRY'), 'options' => $countries, 'class' => 'form-control required', 'default' => array_search($company['country'], $countries)]); ?>
-              </div>
-              <!-- /.form-group -->
-              <div class="form-group">
-                <?php echo $this->Form->input('company.confederation', ['label' => ['class' => 'required'],'empty' => __('SELECT_FA_CONFEDERATION'), 'options' => json_decode(FA_CONFEDERATION), 'class' => 'form-control required', 'default' => $company['confederation']]); ?>
-              </div>
-              <!-- /.form-group -->
-              <div class="form-group">
                 <?php echo $this->Form->input('company.postcode', ['label' => ['class' => 'required','text' => __('POSTCODE')], 'class' => 'form-control required', 'value' => $company['postcode']]); ?>
               </div>
               <!-- /.form-group -->
@@ -203,22 +195,6 @@ $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
               <!-- /.form-group -->
               <div class="form-group">
                 <?php echo $this->Form->input('company.phone', ['label' => ['class' => 'required','text' => __('PHONE')], 'type' => 'tel', 'class' => 'form-control required', 'value' => $company['phone']]); ?>
-              </div>
-              <!-- /.form-group -->
-              <div class="form-group" style="display:none"> 
-                <?php echo $this->Form->input('company.registration_no', ['type' => 'hidden', 'label' => __('Tax/Registration Number'), 'class' => 'form-control', 'value' => $company['registration_no'], 'min' => 0]); ?>
-              </div>
-              <!-- /.form-group -->
-              <div class="form-group">
-                <?php echo $this->Form->input('company.ranking_w', ['type' => 'number', 'label' => ['class' => 'required','text' => __('RANK_W')], 'class' => 'form-control', 'value' => $company['ranking_w'], 'min' => 0]); ?>
-              </div>
-              <!-- /.form-group -->
-              <div class="form-group">
-                <?php echo $this->Form->input('company.ranking_m', ['type' => 'number', 'label' => ['class' => 'required','text' => __('RANK_M')], 'class' => 'form-control', 'value' => $company['ranking_m'], 'min' => 0]); ?>
-              </div>
-              <!-- /.form-group -->
-              <div class="form-group">
-                <?php echo $this->Form->input('company.timezone',['empty' => __('Select Time Zone'),'options'=>$timezones,'label' => __('Time Zone'),'class'=>'form-control','required' => true, 'value' =>$company['timezone']]); ?>
               </div>
               <!-- /.form-group -->
               <div class="form-group">
@@ -231,10 +207,10 @@ $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
               <p style="width:100px;">
                   <?php echo $this->Html->image('/media/companies/' . $company->logo) ?>
               </p>
-              <div class="form-group">
-              <?= $this->Form->button(__('NEXT'), ['type' => 'button', 'class' => 'btn btn-primary tab1Next']); ?>
-              </div><br/>
               <!-- /.form-group -->
+              <div class="form-group">
+                <?= $this->Form->button(__('Submit'), ['class' => 'btn btn-primary tab3Save']) ?>
+              </div><br/>
             </div>
             
             <div id="super_admin_div" class="hide">
@@ -371,7 +347,7 @@ $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
                     form_tag.find('.loading_icon').next().text('Uploading File');
 
                     $.ajax({
-                        url: '<?php echo $this->Url->build('/companies/uploadPicture'); ?>/',
+                        url: '<?php echo $this->Url->build('/faprofiles/uploadPicture'); ?>/',
                         type: 'POST',
                         data: new FormData(this),
                         processData: false,
@@ -442,7 +418,7 @@ $(".allownumericwithoutdecimal").on("keypress keyup blur",function (event) {
             var f_type = '4';
             var tag = $(this).parent();
             $.ajax({
-                url: '<?php echo $this->Url->build('/companies/removeMedia'); ?>',
+                url: '<?php echo $this->Url->build('/faprofiles/removeMedia'); ?>',
                 type: 'POST',
                 data: {f_type: f_type, f_name: f_name},
                 success: function (response) {

@@ -14,10 +14,11 @@ use SubModuleConstants;
  *
  * @property \App\Model\Table\CompaniesTable $Companies
  */
-class CompaniesController extends AppController {
+class FaprofilesController extends AppController {
 
     public function initialize() {
         parent::initialize();
+        $this->loadModel('Companies');
         I18n::locale('en_US');
         $this->Auth->allow(['trnsToaws']);
         //$this->loadComponent('Aws');
@@ -36,7 +37,7 @@ class CompaniesController extends AppController {
      *
      * @return void
      */
-    public function index() {
+    public function indexOrg() {
     	$page_limit=10;
     	if (isset($this->request->query['page_limit'])) {
     		$page_limit= $this->request->query('page_limit');
@@ -323,7 +324,7 @@ class CompaniesController extends AppController {
      * @return void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function profile() {
+    public function index() {
         $id = $this->Auth->user('company_id');
         $CmsUserTable = TableRegistry::get('Cmsusers');
         $company = $this->Companies->get($id, ['contain' => []]);
@@ -332,15 +333,15 @@ class CompaniesController extends AppController {
         if ($this->request->is(['patch', 'post', 'put'])) {
 
             $company = $this->Companies->patchEntity($company, $this->request->data('company'));
-            $company = $this->fixCompanyForEdit($company);
+//            $company = $this->fixCompanyForEdit($company);
             $company->logo = $this->request->data("uploaded_file");
 
-            $timezone_offset = TableRegistry::get('timezones')->find('all')
-                            ->select(['utc_offset'])
-                            ->where(['id' => $_POST['company']['timezone']])->toArray();
-
-
-            $company->timezone_value = $timezone_offset[0]->utc_offset;
+//            $timezone_offset = TableRegistry::get('timezones')->find('all')
+//                            ->select(['utc_offset'])
+//                            ->where(['id' => $_POST['company']['timezone']])->toArray();
+//
+//
+//            $company->timezone_value = $timezone_offset[0]->utc_offset;
 
             $cmsUser = $CmsUserTable->patchEntity($cmsUser, $this->request->data('cmsuser'));
             $cmsUser = $this->fixUserForEdit($cmsUser);
@@ -516,17 +517,17 @@ class CompaniesController extends AppController {
         return true;
     }
 
-    public function getModules() {
-        return array('Company' => '1001');
-    }
-
-    public function getSubModules() {
-        return array('Company Management' =>'2001');
-    }
-
-    public function getPages() {
-        return array('index' =>'3001','view' =>'3005', 'add' =>'3002', 'edit' =>'3003', 'delete' =>'3004');
-    }
+//    public function getModules() {
+//        return array('Company' => '1001');
+//    }
+//
+//    public function getSubModules() {
+//        return array('Company Management' =>'2001');
+//    }
+//
+//    public function getPages() {
+//        return array('index' =>'3001','view' =>'3005', 'add' =>'3002', 'edit' =>'3003', 'delete' =>'3004');
+//    }
 
     private function insertSuperUserPermission($company, $cmsUser) {
 

@@ -187,7 +187,7 @@ class SubModulesController extends AppController
             ->set(['id' => $this->request->data['id'],'module_id'=>$this->request->data['module_id'],
             		'name' => $this->request->data['name'],'icon'=>$this->request->data['icon'],
             		'sequence'=>$this->request->data['sequence'],'controller_name'=>$this->request->data['controller_name'],
-            		'modified_on'=>$this->request->data['modified_on']])
+            		'modified_on'=>$subModule['modified_on']])
             		->where(['id' => $id])
             		->execute();
             if ($update) {

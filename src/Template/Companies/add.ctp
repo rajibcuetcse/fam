@@ -192,8 +192,8 @@ $menu_modules = unserialize($this->request->session()->read('modules'));
 <?php echo $this->Form->input('company.phone', ['label' => ['class' => 'required','text' => __('PHONE')], 'type' => 'tel', 'class' => 'form-control required']); ?>
                         </div>
                         <!-- /.form-group -->
-                        <div class="form-group">
-<?php echo $this->Form->input('company.registration_no', ['type' => 'number', 'label' => __('Tax/Registration Number'), 'class' => 'form-control', 'min' => 0]); ?>
+                        <div class="form-group" style="display:none"> 
+<?php echo $this->Form->input('company.registration_no', ['type' => 'hidden', 'label' => __('Tax/Registration Number'), 'class' => 'form-control', 'min' => 0]); ?>
                         </div>
                         <!-- /.form-group -->
                         <div class="form-group">
@@ -226,6 +226,10 @@ $menu_modules = unserialize($this->request->session()->read('modules'));
                     </div>
                     <!-- /.form-group -->
                     <div class="form-group">
+<?php echo $this->Form->input('cmsuser.email', ['type' => 'email', 'label' => ['class' => 'required','text' => __('EMAIL')], 'required' => true, 'pattern' => '^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$', 'class' => 'form-control required']); ?>
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="form-group">
 <?php echo $this->Form->input('cmsuser.username', ['label' => ['class' => 'required','text' => __('USERNAME')], 'class' => 'form-control required', 'required' => true]); ?>
                     </div>
                     <!-- /.form-group -->
@@ -235,10 +239,6 @@ $menu_modules = unserialize($this->request->session()->read('modules'));
                     <!-- /.form-group -->
                     <div class="form-group">
 <?php echo $this->Form->input('cmsuser.retype_password', ['type' => 'password', 'label' => ['class' => 'required','text' => __('RE_TYPE_PASSWORD')], 'required' => true, 'oninput' => 'checkRetypePassword(this)', 'id' => 'retype_password', 'placeholder' => __('RE_TYPE_PASSWORD'), 'class' => 'form-control required']); ?>
-                    </div>
-                    <!-- /.form-group -->
-                    <div class="form-group">
-<?php echo $this->Form->input('cmsuser.email', ['type' => 'email', 'label' => ['class' => 'required','text' => __('EMAIL')], 'required' => true, 'pattern' => '^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$', 'class' => 'form-control required']); ?>
                     </div>
                     <!-- /.form-group -->
                     <div class="form-group">
