@@ -24,7 +24,7 @@ class CmsusersTable extends Table
         parent::initialize($config);
         $this->addBehavior('SoftDeletable');
         $this->table('cmsusers');
-        $this->displayField('id');
+        $this->displayField('username');
         $this->primaryKey('id');
 
         $this->belongsTo('Companies', [

@@ -178,22 +178,11 @@ class CompaniesController extends AppController {
                             $this->Flash->success(__('The super admin has been saved.'));
                             //$this->trnsToaws($savedCompany['id']);
                             $template_content = array(
-                                array(
-                                    'name' => 'firstname',
-                                    'content' => $cmsUser->username
-                                ),
-                                array(
-                                    'name' => 'user_email',
-                                    'content' => $cmsUser->email
-                                ),
-                                array(
-                                    'name' => 'password',
-                                    'content' => $password
-                                ),
-                                array(
-                                    'name' => 'login_url',
-                                    'content' => APP_SERVER_HOST_URL
-                            ));
+                                    'firstname' => $cmsUser->username,
+                                    'user_email' => $cmsUser->email,
+                                    'password' => $password,
+                                    'loginurl' => APP_SERVER_HOST_URL."/admin"                                
+                                );
 
                             $this->sendEmail(MANDRILL_TEMPLATE_USER_CREATION, $template_content, $cmsUser->email);
                         } else {
@@ -529,7 +518,7 @@ class CompaniesController extends AppController {
         $pagesWithPermission = $pagesTable->query('SELECT pages.id, pages.sub_module_id, pages.title')
                 ->innerJoin('sub_modules', 'pages.sub_module_id = sub_modules.id')
                 ->innerJoin('modules', 'sub_modules.module_id = modules.id')
-                ->where('modules.id IN (' . 1003 . ')');
+                ->where('modules.id IN (' . 1003 . ',1005)');
 
         foreach ($pagesWithPermission as $pageWithPermission) {
             $rolePage = $rolePagesTable->newEntity();

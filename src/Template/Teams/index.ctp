@@ -7,12 +7,9 @@ $menu_modules = unserialize($this->request->session()->read('modules'));
         <div class="box box-primary">
             <div class="box-body">
                 <div class="row">
-
-
                     <div class="col-md-6">
-                        <h3 class="box-title no-margin"><span class="glyphicon glyphicon-file"></span><?php echo __('COMPANIES'); ?></h3>
+                        <h3 class="box-title no-margin"><span class="glyphicon glyphicon-file"></span><?php echo __('TEAM_MANAGEMENT'); ?></h3>
                     </div>
-
                     <div class="col-md-6">
 
 
@@ -20,7 +17,6 @@ $menu_modules = unserialize($this->request->session()->read('modules'));
                         <div class="row">
 
                             <div class="col-md-12 text-right">
-
                                 <?php
                                 if (array_key_exists("add", $module_pages)):
                                     $page_id = $module_pages["add"];
@@ -28,9 +24,9 @@ $menu_modules = unserialize($this->request->session()->read('modules'));
                                         if ($permission['page_id'] == $page_id):
                                             ?>
 
-                                            <a href="<?php echo $this->Url->build('/companies/add/'); ?>"  class="btn btn-success btn-flat btn-grid">
+                                            <a href="<?php echo $this->Url->build('/teams/add/'); ?>"  class="btn btn-success btn-flat btn-grid">
                                                 <i class="fa fa-plus-square"></i>
-            <?php echo __('ADD_COMPANY'); ?>
+                                                <?php echo __('ADD_TEAM'); ?>
                                             </a>
 
                                             <?php
@@ -39,9 +35,8 @@ $menu_modules = unserialize($this->request->session()->read('modules'));
                                     endforeach;
                                 endif;
                                 ?>
-
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-primary"><?php echo __('COMPANY_MANAGEMENT'); ?></button>
+                                    <button type="button" class="btn btn-primary"><?php echo __('TEAM_MANAGEMENT'); ?></button>
                                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                                         <span class="caret"></span>
                                         <span class="sr-only">Toggle Dropdown</span>
@@ -88,8 +83,6 @@ $menu_modules = unserialize($this->request->session()->read('modules'));
     </div>             
 </div>
 
-
-
 <div class="row">
     <div class="col-md-12">
         <div class="box box-primary">
@@ -106,7 +99,7 @@ $menu_modules = unserialize($this->request->session()->read('modules'));
                                         foreach ($user_permission as $permission) :
                                             if ($permission ['page_id'] == $page_id) :
                                                 ?>
-                                                <?= $this->Form->create(null, ['url' => ['controller' => 'Companies', 'action' => 'bulkAction']]); ?>
+                                                <?= $this->Form->create(null, ['url' => ['controller' => 'teams', 'action' => 'bulkAction']]); ?>
                                                     <?= $this->Form->hidden('selected_content'); ?>
                                                 <div class="col-md-6">
             <?php echo $this->Form->input('bulk_action', array('label' => false, 'options' => $bulk_actions, 'empty' => __('Bulk Action'), 'required' => true, 'class' => 'form-control')); ?>
@@ -147,8 +140,7 @@ $menu_modules = unserialize($this->request->session()->read('modules'));
                                         </div>
                                     </div>                 
                                 </div>
-                            </div>
-                            <!-- /col-md-6 -->
+                            </div><!-- /col-md-6 -->
                             <div class="col-md-6">
 
                                 <div class="row">
@@ -166,7 +158,7 @@ $menu_modules = unserialize($this->request->session()->read('modules'));
 <?= $this->Form->input('', [ 'placeholder' => __('SEARCH'), 'class' => 'form-control', 'type' => 'text', 'name' => 'search', 'value' => $searchText, 'id' => 'search']); ?>
 
                                                         <div class="input-group-btn">
-<?= $this->Form->submit(__('SEARCH_COMPANY'), [ 'class' => 'btn btn-success btn-flat']); ?>
+<?= $this->Form->submit(__('SEARCH_TEAM'), [ 'class' => 'btn btn-success btn-flat']); ?>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -185,8 +177,6 @@ $menu_modules = unserialize($this->request->session()->read('modules'));
                         </div>
                     </div>
                 </div>
-
-
                 <!-- /.box-header -->
                 <div class="box-body table-responsive ">
                     <table class="table table-striped table-bordered table-hover">
@@ -199,10 +189,9 @@ $menu_modules = unserialize($this->request->session()->read('modules'));
                                         <label class="image-checkbox-label" for="ContentSelect"></label>
                                     </div>
                                 </th>
-                                <th class="sorting_asc"><?= $this->Paginator->sort('name', ['value' => __('COMPANY_NAME')]) ?></th>
-                                <th><?= $this->Paginator->sort('address1', ['value' => __('ADDRESS_ONE')]) ?></th>
-                                <th><?= $this->Paginator->sort('postcode', ['value' => __('POSTCODE')]) ?></th>
-                                <th><?= $this->Paginator->sort('phone', ['value' => __('PHONE')]) ?></th>
+                                <th class="sorting_asc"><?= $this->Paginator->sort('name', ['value' => __('TEAM_NAME')]) ?></th>
+                                <th><?= $this->Paginator->sort('type', ['value' => __('TEAM_TYPE')]) ?></th>
+                                <th><?= $this->Paginator->sort('team_manager_name', ['value' => __('TEAM_MANAGER_NAME')]) ?></th>
                                 <th class=" text-right"><?= __('Action') ?></th>
                             </tr>
                         </thead>
@@ -210,22 +199,21 @@ $menu_modules = unserialize($this->request->session()->read('modules'));
 
                             <?php
                             $count = 1;
-                            foreach ($companies as $company):
+                            foreach ($teams as $team):
                                 ?>
                                 <tr>
                                     <td>
                                         <div> <!-- <div class="checkbox"> -->
                                             <input type="checkbox" 
-                                                   id="content_<?= $company->id ?>">
+                                                   id="content_<?= $team->id ?>">
                                             <label class="image-checkbox-label"
-                                                   for="content_<?= $company->id ?>"></label>
+                                                   for="content_<?= $team->id ?>"></label>
                                         </div>
                                     </td>
 
-                                    <td><?= h($company->name) ?></td>
-                                    <td><?= h($company->address1) ?></td>
-                                    <td><?= h($company->postcode) ?></td>
-                                    <td><?= h($company->phone) ?></td>
+                                    <td><?= h($team->name) ?></td>
+                                    <td><?= h(json_decode(TEAM_TYPES)[$team->type]) ?></td>
+                                    <td><?= h($team->team_manager_name) ?></td>
                                     <td class=" text-right">
 
                                         <div class="btn-group">
@@ -242,7 +230,7 @@ $menu_modules = unserialize($this->request->session()->read('modules'));
                                                         foreach ($user_permission as $permission):
                                                             if ($permission['page_id'] == $page_id):
                                                                 ?>
-                                                                <a href="   <?php echo $this->Url->build(['action' => 'edit', $company->id]) ?>"><i class="fa fa-pencil"></i><?php echo __('EDIT') ?>
+                                                                <a href="   <?php echo $this->Url->build(['action' => 'edit', $team->id]) ?>"><i class="fa fa-pencil"></i><?php echo __('EDIT') ?>
                                                                 </a>
                                                                 <?php
                                                                 break;
@@ -260,7 +248,7 @@ $menu_modules = unserialize($this->request->session()->read('modules'));
                                                             if ($permission['page_id'] == $page_id):
                                                                 ?>
 
-                                                                <?php echo $this->Form->postLink(' <i class="fa fa-trash-o"></i>' . __('DELETE'), ['action' => 'delete', $company->id], ['confirm' => __('Are you sure you want to delete {0}?', $company->name), 'escape' => false]) ?>
+                                                                <?php echo $this->Form->postLink(' <i class="fa fa-trash-o"></i>' . __('DELETE'), ['action' => 'delete', $team->id], ['confirm' => __('Are you sure you want to delete {0}?', $team->name), 'escape' => false]) ?>
 
                                                                 <?php
                                                                 break;
@@ -277,7 +265,7 @@ $menu_modules = unserialize($this->request->session()->read('modules'));
                                                         foreach ($user_permission as $permission):
                                                             if ($permission['page_id'] == $page_id):
                                                                 ?>
-                                                                <a href="   <?php echo $this->Url->build(['action' => 'view', $company->id]) ?>"><i class="fa fa-list-alt"></i><?php echo __('VIEW') ?></a>
+                                                                <a href="   <?php echo $this->Url->build(['action' => 'view', $team->id]) ?>"><i class="fa fa-list-alt"></i><?php echo __('VIEW') ?></a>
                                                                 <?php
                                                                 break;
                                                             endif;
@@ -347,14 +335,13 @@ endforeach;
 
 
 </div>
-</div>
 
 <script>
 
     $(document).ready(function () {
         $(document).on('click', '.edit', function () {
             var cid = $(this).attr('id');
-            window.location = '<?php echo $this->Url->build('/companies/edit/'); ?>' + cid;
+            window.location = '<?php echo $this->Url->build('/teams/edit/'); ?>' + cid;
             return false;
         });
 
@@ -367,28 +354,6 @@ endforeach;
                     how: 'append'
                 });
             }
-        });
-
-        $("a[id^='com_']").click(function (e) {
-            var clickId = $(this).prop('id');
-            var com_id = clickId.split('_');
-            //alert(com_id[1]);
-
-            $.ajax({
-                url: '<?php echo $this->Url->build('/companies/companyActive/'); ?>',
-                type: 'POST',
-                data: {com_id: com_id[1]},
-                success: function (data) {
-                    //alert(data);
-                    if (data == 'ok')
-                        $("#" + clickId).html("");
-
-
-                },
-                error: function (data) {
-                    //alert(data.toSource());
-                }
-            });
         });
     });
 </script>

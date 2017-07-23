@@ -358,7 +358,6 @@ class CmsusersController extends AppController {
                     $emailData['username'] = $user->username;
                     $emailData['pin'] = base64_encode($user->id);
                     $emailData['token'] = base64_encode($token);
-
                     $url = Router::url([
                                 'controller' => 'Cmsusers',
                                 'action' => 'resetPassword'
@@ -366,19 +365,17 @@ class CmsusersController extends AppController {
 
 
                     $template_content = array(
-                        array(
-                            'name' => 'username',
-                            'content' => $emailData['username']),
-                        array(
-                            'name' => 'reset_url',
-                            'content' => $url . '/' . $emailData['pin'] . '/' . $emailData['token'])
+                            'username' => $emailData['username'],
+                            'reset_url' => $url . '/' . $emailData['pin'] . '/' . $emailData['token'],
+                            'pin' => $emailData['pin'] ,
+                            'token' => $emailData['token']
                     );
 
-                    $result = $this->sendEmail(MANDRILL_TEMPLATE_FORGOT_PASSWORD, $template_content, $user->email);
+                    $result = $this->sendEmail(MANDRILL_TEMPLATE_FORGOT_PASSWORD, $template_content, $user->email,'Forgot Passord');
                     //var_dump($result);exit;
                     $this->Flash->success(__('An email has been successfully sent to your email with instructions to reset your password.'));
 
-                    return $this->redirect('/');
+                    return $this->redirect('/admin');
                 } else {
                     $this->Flash->error(__('Email id you entered is not registered with us. Please try again.'));
                 }

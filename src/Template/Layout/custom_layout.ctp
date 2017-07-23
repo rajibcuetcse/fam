@@ -167,7 +167,7 @@ $profile_picture = (empty($img_path)) ? $this->request->webroot."media/companies
 	});
 </script>
 <footer class="main-footer">
-<strong>Copyright &copy; 2016 <a href="#">CHTL</a>.</strong> All rights
+<strong>Copyright &copy; 2016 <a href="#">Soca Loca Sdn Bhd</a>.</strong> All rights
 reserved.
 </footer>
 

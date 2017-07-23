@@ -14,6 +14,81 @@ msgstr ""
 msgid "COMPANY_NAME"
 msgstr "FA Name"
 
+msgid "TEAM_MANAGEMENT"
+msgstr "Team Management"
+
+msgid "TEAM_NAME"
+msgstr "Team Name"
+
+msgid "TEAM_MANAGER_NAME"
+msgstr "Manager Name"
+
+msgid "SELECT_AGE_CATEORY"
+msgstr "Select age category"
+
+msgid "ADD_TEAM"
+msgstr "Add Team"
+
+msgid "SELECT_GENDER"
+msgstr "Select gender"
+
+msgid "EDIT_TEAM"
+msgstr "Edit Team"
+
+msgid "VIEW_TEAM"
+msgstr "View     Team"
+
+msgid "SEARCH_TEAM"
+msgstr "Search Team"
+
+msgid "AGE_CATEGORY"
+msgstr "Age category"
+
+msgid "TEAM_TYPE"
+msgstr "Team type"
+
+msgid "SELECT_TEAM_TYPE"
+msgstr "Select team type"
+
+msgid "SELECT_ADMINITRATOR"
+msgstr "Select administrator"
+
+msgid "GENDER"
+msgstr "Gender"
+
+msgid "ADMINISTRATOR"
+msgstr "Administrator"
+
+msgid "ADMIN_DESIGNATION"
+msgstr "Administrator designation"
+
+msgid "FIRST_COLOR"
+msgstr "First color"
+
+msgid "SECOND_COLOR"
+msgstr "Second color"
+
+msgid "THIRD_COLOR"
+msgstr "Third color"
+
+msgid "NO_OF_PLAYERS_SQUAD"
+msgstr "No of players squad"
+
+msgid "NO_OF_OFFICIAL_SQUAD"
+msgstr "No of official squad"
+
+msgid "HEAD_COACH_NAME"
+msgstr "Head coach name"
+
+msgid "HEAD_COACH_NATIONALITY"
+msgstr "Head coach nationality"
+
+msgid "TEAM_MANAGER"
+msgstr "Team manager"
+
+msgid "TEAM_MANAGER_NATIONALITY"
+msgstr "Team manager nationality"
+
 msgid "COMPANY_INFO"
 msgstr "FA info"
 

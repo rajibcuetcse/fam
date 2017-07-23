@@ -18,6 +18,7 @@ use Cake\Controller\Controller;
 use Cake\ORM\TableRegistry;
 use Cake\Datasource\ConnectionManager;
 use Cake\Event\Event;
+use Cake\Mailer\Email;
 use Exception;
 use Mandrill;
 use stdClass;
@@ -129,19 +130,44 @@ abstract class AppController extends Controller
     }
 
 
-    public function sendEmail($templateName, $templateContent, $to)
+//    public function sendEmail($templateName, $templateContent, $to)
+//    {
+//        try {
+//
+//            $mandrill = new Mandrill(MANDRILL_API_KEY);
+//
+//            $message = new stdClass();
+//            $message->to = $to;
+//            $message->track_opens = true;
+//            $message->merge_language = 'handlebars';
+//            $message->global_merge_vars = $templateContent;
+//            //pr($message);exit;
+//            $response = $mandrill->messages->sendTemplate($templateName, $templateContent, $message);
+//        } catch (Exception $ex) {
+//            $this->log($ex);
+//        }
+//    }
+
+    public function sendEmail($templateName, $templateContent, $to,$sub="New FA registration")
     {
         try {
-
-            $mandrill = new Mandrill(MANDRILL_API_KEY);
-
-            $message = new stdClass();
-            $message->to = $to;
-            $message->track_opens = true;
-            $message->merge_language = 'handlebars';
-            $message->global_merge_vars = $templateContent;
-            //pr($message);exit;
-            $response = $mandrill->messages->sendTemplate($templateName, $templateContent, $message);
+            $email = new Email('default');
+            $email->from([APP_SMTP_USERNAME => APP_SMTP_FROM_NAME])
+                ->template($templateName)
+                ->emailFormat('html')
+                ->to($to)
+                ->viewVars($templateContent)
+                ->subject($sub)
+                ->send();
+//            $mandrill = new Mandrill(MANDRILL_API_KEY);
+//
+//            $message = new stdClass();
+//            $message->to = $to;
+//            $message->track_opens = true;
+//            $message->merge_language = 'handlebars';
+//            $message->global_merge_vars = $templateContent;
+//            //pr($message);exit;
+//            $response = $mandrill->messages->sendTemplate($templateName, $templateContent, $message);
         } catch (Exception $ex) {
             $this->log($ex);
         }
@@ -277,14 +303,16 @@ FROM            cmsusers
     	}
     	$current_submodule_arr=array();
     	$modules = unserialize($this->request->session()->read('modules'));
-    	foreach($modules as $module){
-    		foreach($module['sub_modules'] as $submodule ){
-    			if($request_controller==strtolower($submodule['controller_name'])){
-    				$current_submodule_arr=array($submodule['name']=>$submodule['id']);
-    				break 2;
-    			}
-    		}
-    	}
+        if(!empty($modules)){
+            foreach($modules as $module){
+                    foreach($module['sub_modules'] as $submodule ){
+                            if($request_controller==strtolower($submodule['controller_name'])){
+                                    $current_submodule_arr=array($submodule['name']=>$submodule['id']);
+                                    break 2;
+                            }
+                    }
+            }
+        }
     	return $current_submodule_arr; // return ['Page Management' => '2022'];
     }
 

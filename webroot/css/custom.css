@@ -153,3 +153,6 @@
 .container{
 	width: 1090px;
 }
+
+/*Added by Ashish*/
+label.required:after {content: " *"; color: red;}
